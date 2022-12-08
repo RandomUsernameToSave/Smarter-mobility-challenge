@@ -1,0 +1,10 @@
+numpy
+matplotlib
+seaborn
+pandas
+catboost
+scipy
+datetime
+notebook
+darts
+torch
