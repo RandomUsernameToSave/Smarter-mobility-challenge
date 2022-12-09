@@ -1,7 +1,7 @@
 # Smarter-mobility-challenge
 
 ## How it works
-![Alt text](./Tableau%20vierge.png?raw=true "Title")
+![Alt text](./Tableau.png?raw=true "Title")
 
 ## How to reproduce results 
 1. Run : git clone https://github.com/RandomUsernameToSave/Smarter-mobility-challenge.git
