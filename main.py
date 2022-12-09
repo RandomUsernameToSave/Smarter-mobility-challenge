@@ -1,4 +1,4 @@
-from load_data import import_data
+from utils.load_data import import_data
 import numpy as np
 import matplotlib.pyplot as plt
 from darts.models import NHiTSModel,BlockRNNModel,TCNModel
@@ -9,12 +9,12 @@ import torch
 import torch.optim as optim
 from darts.utils.missing_values import fill_missing_values
 from darts.dataprocessing.transformers import Scaler
-from hierarchy import hierarchy_create, hierarchy_dataframe
-from covariates import create_covariates
+from utils.hierarchy import hierarchy_create, hierarchy_dataframe
+from utils.covariates import create_covariates
 import pickle
 from darts.dataprocessing.transformers.reconciliation import TopDownReconciliator,BottomUpReconciliator, MinTReconciliator 
-from utils_submit import submit
-from benchmark2 import benchmark
+from utils.utils_submit import submit
+from utils.benchmark2 import benchmark
 
 benchmark()
 

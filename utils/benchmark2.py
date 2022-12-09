@@ -1,7 +1,7 @@
 import pandas as pd
-from format_submission import format_submission2
+from utils.format_submission import format_submission2
 from catboost import Pool, CatBoostClassifier, CatBoostRegressor
-from utility import *
+from utils.utility import *
 # ET SI JE COMBINAIS LE MODELE POUR LES STATIONS PUIS RNN SUR AREA ET GLOBAL
 #### 1. Importing and Preparing Data ####
 

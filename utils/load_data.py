@@ -1,5 +1,5 @@
 import pandas as pd
-from format_submission import format_submission2
+from utils.format_submission import format_submission2
 import numpy as np
 
 def import_data():
