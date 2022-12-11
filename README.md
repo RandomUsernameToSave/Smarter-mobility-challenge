@@ -1,9 +1,13 @@
 # Smarter-mobility-challenge
 
 ## How it works
-It trains, predicts, and stores predictions in Station.pkl using benchmark2.py.
-It prepares data to build time series using load_data and hierarchy.
-And it fit TCN models to data and finally predicts data at area and total level.
+We will train 2 models on the data, and store prediction in Station.pkl, Available.pkl, Charging.pkl, Passive.pkl, Other.pkl, then we will organize our data to be able to submit them.
+
+1. It trains, predicts, and stores predictions in Station.pkl using benchmark2.py.
+2. It prepares data to build time series using load_data and hierarchy.
+3. It build and fit TCN models to data 
+4. It predicts data at area and total level.
+5. It regroups data in one dataframe
 
 ![My Image](Tableau.png)
 
