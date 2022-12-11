@@ -1,5 +1,6 @@
 # Smarter-mobility-challenge
 
+
 ## How it works
 We will train 2 models on the data, and store prediction in Station.pkl, Available.pkl, Charging.pkl, Passive.pkl, Other.pkl, then we will organize our data to be able to submit them.
 

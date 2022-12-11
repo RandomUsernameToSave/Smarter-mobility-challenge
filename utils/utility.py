@@ -36,7 +36,7 @@ def catboost_training(train, test, features, cat_features, targets, learning_rat
         valid = test[features + [target]].dropna()
 
         # Training model
-        print(relevant)
+
         train_dataset = Pool(data=relevant[features],
                              label=relevant[target],
                              cat_features=cat_features)

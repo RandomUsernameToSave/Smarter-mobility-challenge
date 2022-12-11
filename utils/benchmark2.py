@@ -16,9 +16,9 @@ def benchmark():
     n = len(train)
     n_train = 0.8*n
     train_station = train#.loc[0:n_train,]
-    # print(train_station)
+
     valid_station = train.loc[n_train:n,]
-    # print(valid_station)
+
 
     test_station = pd.read_csv("../0. Input Data/test.csv", sep=",")
     test_station['date'] = pd.to_datetime(test_station['date'])

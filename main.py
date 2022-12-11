@@ -101,7 +101,14 @@ for i, target in enumerate(targets):
     ,past_covariates=past_timeserie
     ))
 
+    # naive_forecast = scaler.inverse_transform(naive_forecast) ## uncomment this part and the one in hierarchy.py to scale data
+    
 
+    ## Remove comment to add hierarchy reconciliation
+
+    #reconciliator = MinTReconciliator()  
+    #reconciliator.fit(L)
+    #naive_forecast = reconciliator.transform(naive_forecast)
 
     L[['east','Total']].plot(label="data")
     naive_forecast[['east','Total']].plot(label="fitted")
