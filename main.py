@@ -16,6 +16,9 @@ from darts.dataprocessing.transformers.reconciliation import TopDownReconciliato
 from utils.utils_submit import submit
 from utils.benchmark2 import benchmark
 
+#### Training and prediction at station level
+
+print('Prediction at Station level')
 benchmark()
 
 
@@ -31,6 +34,9 @@ print('Data imported')
 
 models = []
 preds = []
+
+
+print('TCN model training')
 
 for i, target in enumerate(targets):
     print("==== Target ", target, " ====")
@@ -87,11 +93,13 @@ for i, target in enumerate(targets):
     
     )
     
+
     print('Model Loaded !')
         #### Fit le modèle aux deux jeux de données ####
     Nhits.fit(L2
             ,past_covariates=past_timeserie2
             )
+            
     Nhits.fit(L
             ,past_covariates=past_timeserie
             )
